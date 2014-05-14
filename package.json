@@ -1,0 +1,34 @@
+{
+  "name": "grunt-swig-templates",
+  "version": "0.0.1",
+  "description": "Grunt plugin to compile Swig templates to static HTML",
+  "homepage": "https://github.com/larsonjj/grunt-swig-templates",
+  "repository": "https://github.com/larsonjj/grunt-swig-templates",
+  "author": {
+    "name": "Jake Larson",
+    "email": "jake.j.larson@gmail.com",
+    "url": "jakelarson.io"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "swig": "1.3.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-nodeunit": "~0.3.0",
+    "grunt": "~0.4.2",
+    "jshint-stylish": "~0.1.5",
+    "load-grunt-tasks": "~0.3.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
