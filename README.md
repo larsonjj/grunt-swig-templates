@@ -84,6 +84,8 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+<strong>v0.1.1</strong> - Fixed issues with swig templating
+
 <strong>v0.1.0</strong> - Initial Release
 
 ## License

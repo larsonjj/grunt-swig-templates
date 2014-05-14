@@ -1,10 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Testing {{content}}</title>
-</head>
-<body>
-    <h1>This is a test 2</h1>
-</body>
-</html>
+{% extends './template/base.swig' %}
+{% block content %}
+<h1>This is a test {{content}}</h1>
+{% endblock %}

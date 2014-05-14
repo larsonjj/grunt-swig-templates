@@ -35,7 +35,10 @@ module.exports = function (grunt) {
         }
       }).map(function (filepath) {
         // Read file source.
-        return grunt.file.read(filepath);
+        return {
+          source: grunt.file.read(filepath),
+          path: filepath
+        };
       });
 
       if (output.length < 1) {
@@ -43,7 +46,8 @@ module.exports = function (grunt) {
       }
       else {
         output.forEach(function(item) {
-          var src = swig.render(item, {
+          var src = swig.render(item.source, {
+            filename: item.path,
             locals: options.data
           });
 
