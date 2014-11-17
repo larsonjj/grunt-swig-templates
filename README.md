@@ -43,6 +43,12 @@ Default value: `{}`
 
 A Object that will get passed into swig templates
 
+#### options.templatePath
+Type: `String`
+Default value: undefined
+
+A filepath string that allows loading of templates from a specific directory (does not require using relative paths in your templates)
+
 ### Usage Examples
 
 #### Default Options
@@ -83,6 +89,10 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+
+<strong>v0.1.3</strong> - Added `templatePath` options [#1](https://github.com/larsonjj/grunt-swig-templates/pull/1)
+
+<strong>v0.1.2</strong> - Updated swig library
 
 <strong>v0.1.1</strong> - Fixed issues with swig templating
 
