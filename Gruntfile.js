@@ -35,6 +35,7 @@ module.exports = function (grunt) {
     swig: {
       default_options: {
         options: {
+          templatePath: 'test/fixtures/'
         },
         expand: true,
         cwd: 'test/fixtures/',
