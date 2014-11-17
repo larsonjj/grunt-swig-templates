@@ -22,6 +22,11 @@ module.exports = function (grunt) {
       data: {}
     });
 
+    // Get optional template path from options, setting root folder of where Swig looks for templates
+    if (options.templatePath) {
+      swig.setDefaults({ loader: swig.loaders.fs(options.templatePath)});
+    }
+
     // Iterate over all specified file groups.
     this.files.forEach(function (file) {
       // Concat specified files.
