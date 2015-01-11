@@ -22,10 +22,13 @@ module.exports = function (grunt) {
       data: {}
     });
 
-    // Get optional template path from options, setting root folder of where Swig looks for templates
-    if (options.templatePath) {
-      swig.setDefaults({ loader: swig.loaders.fs(options.templatePath)});
-    }
+    // Setup swig default configuration
+    swig.setDefaults({
+      // Get optional template path from options, setting root folder of where Swig looks for templates
+      loader: options.templatePath ? swig.loaders.fs(options.templatePath) : swig.loaders.fs(),
+      // Cache templates
+      cache: options.cache === true ? true : false
+    });
 
     // Iterate over all specified file groups.
     this.files.forEach(function (file) {

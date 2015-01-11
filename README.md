@@ -43,6 +43,12 @@ Default value: `{}`
 
 A Object that will get passed into swig templates
 
+#### options.cache
+Type: `Boolean`
+Default value: `false`
+
+A boolean that determines if templates should be cached. See more info [here](http://paularmstrong.github.io/swig/docs/api/#CacheOptions)
+
 #### options.templatePath
 Type: `String`
 Default value: undefined
@@ -89,6 +95,8 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+
+<strong>v0.1.4</strong> - Added `cache` options
 
 <strong>v0.1.3</strong> - Added `templatePath` options [#1](https://github.com/larsonjj/grunt-swig-templates/pull/1)
 
